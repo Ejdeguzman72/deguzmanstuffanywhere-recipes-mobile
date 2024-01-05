@@ -7,7 +7,7 @@ export default function LandingScreen({ navigation }) {
             <Image source={require('../assets/chef.gif')} />
             <View style={styles.buttonContainer}>
                 <TouchableOpacity title='DSA Recipes' style={styles.button} >
-                    <Text style={styles.buttonText}>DSA Recipes</Text>
+                    <Text style={styles.buttonText}>DSA Recipes --></Text>
                 </TouchableOpacity>
 
             </View>
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
         height: 50,
         justifyContent: 'center',
         width: 250,
+        opacity: 0.7
     },
     buttonText: {
         color: 'white',
