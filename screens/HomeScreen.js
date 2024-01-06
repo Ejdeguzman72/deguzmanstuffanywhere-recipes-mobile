@@ -1,16 +1,11 @@
 import React from 'react';
 import { StyleSheet, View, Image, TouchableOpacity, Text } from 'react-native';
+import RecipeList from '../components/RecipeList';
 
-export default function LandingScreen({ navigation }) {
+export default function HomeScreen({ navigation }) {
     return (
         <View style={styles.container} >
-            <Image source={require('../assets/chef.gif')} />
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity title='DSA Recipes' style={styles.button} onPress={() => navigation.navigate('Home')}>
-                    <Text style={styles.buttonText}>DSA Recipes</Text>
-                </TouchableOpacity>
-
-            </View>
+            <RecipeList />
         </View>
     );
 }

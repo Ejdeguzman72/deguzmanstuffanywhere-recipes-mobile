@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import LandingScreen from './screens/LandingScreen';
+import AppStackNavigation from './navigator/AppStackNavigation';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <LandingScreen />
-    </View>
+    <NavigationContainer>
+      <AppStackNavigation />
+    </NavigationContainer>
   );
 }
 
