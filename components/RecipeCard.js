@@ -12,7 +12,7 @@ const RecipeCard = ({ recipe }) => {
   return (
     <View style={{ marginBottom: 20 }}>
       <Text style={{ fontSize: 20, fontWeight: 'bold', color: 'white' }}>{recipe.name}</Text>
-      <Text style={{ fontStyle: 'italic', color: 'gray',  color: 'gray'  }}>{recipe.descr}</Text>
+      <Text style={{ fontStyle: 'italic', color: 'white'  }}>{recipe.descr}</Text>
 
       <List.Accordion
         title="Ingredients"
@@ -22,7 +22,7 @@ const RecipeCard = ({ recipe }) => {
         titleStyle={{ color: 'black', fontWeight: 'bold' }}
       >
         {recipe.ingredients.map((ingredient, index) => (
-          <Text key={index}>{ingredient} </Text>
+          <Text key={index} style={{ color: 'white', padding: '10px' }}>{ingredient}</Text>
         ))}
       </List.Accordion>
 
@@ -34,7 +34,7 @@ const RecipeCard = ({ recipe }) => {
         titleStyle={{ color: 'black', fontWeight: 'bold' }}
       >
         {recipe.directions.map((direction, index) => (
-          <Text key={index} style={{ color: 'white' }}>{`${index + 1}. ${direction}`} </Text>
+          <Text key={index} style={{ color: 'white', padding: '20px' }}>{`${index + 1}. ${direction}`} </Text>
         ))}
       </List.Accordion>
     </View>
