@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#28231D"
+      "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,18 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/chef-icon.png",
-        "backgroundColor": "#28231D"
-      },
-      "package": "com.ejdeguzman72.deguzmanstuffanywhererecipesmobile"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "ae0ea4a2-21dd-4b78-836d-4dd5a8fd711e"
-      }
     }
   }
 }
